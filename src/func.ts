@@ -33,3 +33,16 @@ export const getAge = (strBd: string, strToday: string): number => {
 
   return age;
 }; // end getAge
+
+// =============================================
+// 現在日付から年齢を計算
+// bd : 誕生日文字列(yyyy-MM-dd形式)
+// today : 現在日付文字列(yyyy-MM-dd形式)
+// =============================================
+export const noHyphen = (str_date: string): string => {
+  let ret = '';
+
+  ret = str_date.replace(/-/g, '');
+
+  return ret;
+}; // end getAge

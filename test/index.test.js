@@ -54,3 +54,13 @@ describe('getAge', () => {
   });
 
 });
+
+
+describe('noHyphen', () => {
+
+  it('2020-08-16 -> 20200816', () => {
+    const result = func.noHyphen('2020-08-16');
+    expect(result).toBe('20200816');
+  });
+
+});
